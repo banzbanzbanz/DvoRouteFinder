@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        <link rel="stylesheet" href="ass/bootstrap.min.css" type="text/css"  />
+		<link rel="stylesheet" href="ass/style.css" type="text/css" />
+		<style>
+		#logomid {
+		text-align: center; }
+		.wrapper{ 
+		
+		animation: fadeIn 3s;
+			}
+			@keyframes fadeIn {
+				from {
+					opacity: 0;
+				}
+				to {
+					opacity: 2;
+				}
+			
+			
+			}		
+		
+		</style>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<title>Davao Route Finder</title>
+    </head>
+    <body>
+	
+        <script type="text/javascript" src="cordova.js"></script>
+		<br>
+		<div class = "wrapper">
+		<h1 id="logomid" ><a href="rfinder.html" class="btn btn-info btn-lg">
+          <span class="glyphicon glyphicon-map-marker"></span> 	Route Finder Davao
+        </a>
+		</h1>
+		<br>
+		
+		<div class="page-header">
+				<nav class="nav nav-pills nav-justified">
+				<a class="nav-item nav-link active" href="rfinder.html">Route Finder</a>
+				<a class="nav-item nav-link" href="davaor.html">Davao Route's</a>
+				<a class="nav-item nav-link" href="about.html">About us</a>
+			</nav>
+			</div>
+			
+			<br>
+			
+		 <div class="form-group">
+             <div class="input-group">
+                <span class="input-group-addon"><span class="glyphicon glyphicon-map-marker"></span></span>
+             <input type="text" list="mark" id="origin" class="form-control" placeholder="Enter origin" maxlength="50" />
+			 <datalist id="mark">
+				<option value="G-mall">
+				<option value="Victoria Plaza">
+				<option value="SSS">
+				<option value="Davao Light">
+				<option value="SPMC">
+				<option value="Sacred Hearth">
+				<option value="Obrero">
+				<option value="UseP">
+				<option value="Agdao">
+		
+			</datalist>
+			 
+                </div>
+                <span class="text-danger"></span>
+            </div>
+			<br>
+			
+			
+			<div class="form-group">
+             <div class="input-group">
+                <span class="input-group-addon"><span class="glyphicon glyphicon-share-alt"></span></span>
+             <input type="text" list="mark2" id="desti" class="form-control" placeholder="Enter destination" maxlength="50" />
+			 <datalist id="mark2">
+				<option value="G-mall">
+				<option value="Victoria Plaza">
+				<option value="SSS">
+				<option value="Davao Light">
+				<option value="SPMC">
+				<option value="Sacred Hearth">
+				<option value="Obrero">
+				<option value="UseP">
+				<option value="Agdao">
+		
+			</datalist>
+                </div>
+                <span class="text-danger"></span>
+            </div>
+			
+		
+		<div class="form-group">
+             <button type="submit" class="btn btn-block btn-primary" name="btn-login" onclick="find()">Find Route</button>
+            </div>
+						
+			
+			
+		
+		</form>
+		</div>
+		
+		
+		
+		
+		<script>
+		
+		function find() {
+		
+		
+		var origin = document.getElementById("origin").value;
+		var desti = document.getElementById("desti").value;
+		
+		
+		if ((origin.match(/^(agdao|warehouse|mercury|agdao market)$/i) && desti.match(/^(usep|obrero|victoria|sacred hearth)$/i) || (desti.match(/^(agdao|warehouse|mercury|agdao market)$/i) && origin.match(/^(usep|obrero|victoria|sacred hearth)$/i)))) {
+			
+			
+			window.alert("Ride a tricycle \n Fare: Student 7 php Regular 8-10 php.");
+			
+	
+		}
+		
+		if ((origin.match(/^(G-MALL|victoria plaza|JP Laurel ave|PNB)$/i)&& desti.match(/^(Davao light|SPMC|SSS|ASSUMTION COLLEGE OF DAVAO)$/i) || (origin.match(/^(Davao light|SPMC|SSS|ASSUMTION COLLEGE OF DAVAO)$/i) && desti.match(/^(G-MALL|victoria plaza|JP Laurel ave|PNB)$/i)))) {
+		
+		
+            window.alert("Route 10 OR\nRoute 4 \n Fare: \n Student = 7 php \n Regular = 8 php");
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		 else {
+			window.alert("invalid route");
+			}
+
+		
+			
+			
+			
+		
+		
+		
+}
+</script>
+		
+		
+    </body>
+</html>

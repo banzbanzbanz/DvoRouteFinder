@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        <link rel="stylesheet" href="ass/bootstrap.min.css" type="text/css"  />
+		<link rel="stylesheet" href="ass/style.css" type="text/css" />
+		<style>#logomid {text-align: center; } </style>
+	
+		<title>Davao Route Finder</title>
+    </head>
+    <body>
+        <script type="text/javascript" src="cordova.js"></script>
+		<br>
+		<h1 id="logomid" >Route Finder Davao </h1>
+		<br>
+		
+		<div class="page-header">
+				<nav class="nav nav-pills nav-justified">
+				<a class="nav-item nav-link active" href="index.html">Home</a>
+				<a class="nav-item nav-link" href="#">Davao Life</a>
+				<a class="nav-item nav-link" href="#">About us</a>
+			</nav>
+			</div>
+			
+			<br>
+			
+			
+			
+			<h1 id="logomid" >MID LOGO UNDER CONSTRUCTION </h1>
+		
+		<form>
+		<br>
+		 <div class="form-group">
+             <div class="input-group">
+                <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
+             <input type="text" id="origin" class="form-control" placeholder="Enter origin" maxlength="50" />
+                </div>
+                <span class="text-danger"></span>
+            </div>
+			<br>
+			<div class="form-group">
+             <div class="input-group">
+                <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
+             <input type="text" id="desti" class="form-control" placeholder="Enter destination" maxlength="50" />
+                </div>
+                <span class="text-danger"></span>
+            </div>
+			
+		
+		<div class="form-group">
+             <button type="submit" class="btn btn-block btn-primary" name="btn-login" onclick="find()">Find Route</button>
+            </div>
+			
+			
+		
+		</form>
+		
+		
+		
+		
+		<script>
+		
+		function find() {
+		
+		
+		var origin = document.getElementById("origin").value;
+		var desti = document.getElementById("desti").value;
+		
+		
+		
+		if (( origin == 'agdao'&& desti == 'usep') || ( origin == 'agdao' && desti == 'obrero')) {
+			
+			document.write("tricycle");
+	
+		}
+		 else {
+			window.alert("invalid route");
+			}
+
+		
+			
+			
+			
+		
+		
+		
+}
+</script>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+    </body>
+</html>
