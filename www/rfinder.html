@@ -63,7 +63,12 @@
 				<option value="Sacred Hearth">
 				<option value="Obrero">
 				<option value="UseP">
-				<option value="Agdao">
+				<option value="Agdao Public market">
+				<option value="Brokenshire Hospital">
+				<option value="Orchard Cemetery">
+				<option value="Wireless Cemetery">
+				<option value="Davao City National High School">
+				<option value="F.Torress ST.">
 		
 			</datalist>
 			 
@@ -86,7 +91,23 @@
 				<option value="Sacred Hearth">
 				<option value="Obrero">
 				<option value="UseP">
-				<option value="Agdao">
+				<option value="Agdao Public Market">
+				<option value="San Pedro Cathedral">
+				<option value="San Pedro">
+				<option value="Quezon Blvd">
+				<option value="Mini Forest Blvd">
+				<option value="Piapi Blvd">
+				<option value="Trading Blvd">
+				<option value="DCPO">
+				<option value="Davao City Police Office">
+				<option value="Bankerohan Public Market">
+				<option value="F. Torress ST.">
+				<option value="Wireless Cemetery">
+				<option value="Orchard Cemetery">
+				<option value="Brokenshire Hospital">
+				<option value="Davao City National High School">
+				
+				
 		
 			</datalist>
                 </div>
@@ -109,6 +130,14 @@
 		
 		<script>
 		
+		function openWin() {
+		myWindow = window.open("", "myWindow", "width=200,height=100");
+		}
+
+		function closeWin() {
+		myWindow.close();
+		}
+		
 		function find() {
 		
 		
@@ -119,37 +148,40 @@
 		if ((origin.match(/^(agdao|warehouse|mercury|agdao market)$/i) && desti.match(/^(usep|obrero|victoria|sacred hearth)$/i) || (desti.match(/^(agdao|warehouse|mercury|agdao market)$/i) && origin.match(/^(usep|obrero|victoria|sacred hearth)$/i)))) {
 			
 			
-			window.alert("Ride a tricycle \n Fare: Student 7 php Regular 8-10 php.");
+			//window.open("marks/Agdao.html"); 
+			var mywindow = window.open("Agdao.html","mywindow");
 			
 	
 		}
 		
-		if ((origin.match(/^(G-MALL|victoria plaza|JP Laurel ave|PNB)$/i)&& desti.match(/^(Davao light|SPMC|SSS|ASSUMTION COLLEGE OF DAVAO)$/i) || (origin.match(/^(Davao light|SPMC|SSS|ASSUMTION COLLEGE OF DAVAO)$/i) && desti.match(/^(G-MALL|victoria plaza|JP Laurel ave|PNB)$/i)))) {
+		if ((origin.match(/^(G-MALL|victoria plaza|JP Laurel ave|PNB)$/i)&& desti.match(/^(Obrero|Davao light|SPMC|SSS|ASSUMTION COLLEGE OF DAVAO)$/i) || (origin.match(/^(Davao light|SPMC|SSS|ASSUMTION COLLEGE OF DAVAO)$/i) && desti.match(/^(G-MALL|victoria plaza|JP Laurel ave|PNB)$/i)))) {
 		
 		
             window.alert("Route 10 OR\nRoute 4 \n Fare: \n Student = 7 php \n Regular = 8 php");
 		}
+		if ((origin.match(/^(Agdao Public Market|Agdao Flyover)$/i) && desti.match(/^(Bankerohan Public Market|San Pedro Cathedral|San Pedro|Piapi Blvd|Mini Forest Blvd|Quezon Blvd|Trading Blvd|DCPO|Davao City Police Office)$/i) || (origin.match(/^(San Pedro Cathedral|San Pedro|Piapi Blvd|Mini Forest Blvd|Quezon Blvd|Trading Blvd|DCPO|Davao City Police Office)$/i) && desti.match(/^(Agdao Public Market|Agdao Flyover)$/i)))) {
 		
 		
+            window.alert("Route 4, Route 5 or Route 6 \n Fare: \n Student: 7 PHP \n Regular = 8 PHP");
+		}
+		if ((origin.match(/^(Agdao Public Market)$/i) && desti.match(/^(F.Torress ST.|Brokenshire Hospital|Orchard Cemetery|Wireless Cemetery|Davao City National High School|Madapo)$/i) || (desti.match(/^(Agdao Public Market)$/i) && origin.match(/^(F.Torress ST.|Brokenshire Hospital|Orchard Cemetery|Wireless Cemetery|Davao City National High School|Madapo)$/i)))) {
+			
+			
+			window.alert("Route 11 \n Fare: \n Student: 7 PHP \n Regular: 8 PHP");
+			
+	
+		}
 		
 		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		 else {
-			window.alert("invalid route");
-			}
 
 		
+		else {
+		
+			window.alert("Invalid route...");
 			
-			
-			
+		}
+		
+		
 		
 		
 		
