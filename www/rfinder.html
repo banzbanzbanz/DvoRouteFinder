@@ -76,6 +76,7 @@
 				<option value="Piapi Blvd">
 				<option value="Trading Blvd">
 				<option value="DCPO">
+				<option value="Cabagio ave.">
 		
 			</datalist>
 			 
@@ -113,6 +114,7 @@
 				<option value="Orchard Cemetery">
 				<option value="Brokenshire Hospital">
 				<option value="Davao City National High School">
+				<option value="Cabagio ave.">
 				
 				
 		
@@ -152,28 +154,28 @@
 		var desti = document.getElementById("desti").value;
 		
 		
-		if ((origin.match(/^(agdao|warehouse|mercury|agdao market)$/i) && desti.match(/^(UseP|obrero|victoria|sacred hearth)$/i) || (desti.match(/^(agdao|warehouse|mercury|agdao market)$/i) && origin.match(/^(usep|obrero|victoria|sacred hearth)$/i)))) {
+		if ((origin.match(/^(Agdao Public Market|Agdao)$/i) && desti.match(/^(UseP|obrero|victoria|sacred hearth)$/i) || (desti.match(/^(agdao|warehouse|mercury|agdao market)$/i) && origin.match(/^(usep|obrero|victoria|sacred hearth)$/i)))) {
 			
 			
 			window.open("Agdao.html"); 
-			//var mywindow = window.open("Agdao.html","mywindow");
+			
 			
 	
 		}
 		
-		else if ((origin.match(/^(Agdao Public Market|G-MALL|victoria plaza|JP Laurel ave|PNB)$/i)&& desti.match(/^(Obrero|Davao light|SPMC|SSS|ASSUMTION COLLEGE OF DAVAO)$/i) || (origin.match(/^(Davao light|SPMC|SSS|ASSUMTION COLLEGE OF DAVAO)$/i) && desti.match(/^(G-MALL|victoria plaza|JP Laurel ave|PNB)$/i)))) {
+		else if ((origin.match(/^(G-MALL|victoria plaza|JP Laurel ave|PNB)$/i)&& desti.match(/^(Cabagio ave.|Davao light|SPMC|SSS|ASSUMTION COLLEGE OF DAVAO)$/i) || (origin.match(/^(Cabagio ave.|Davao light|SPMC|SSS|ASSUMTION COLLEGE OF DAVAO)$/i) && desti.match(/^(G-MALL|victoria plaza|JP Laurel ave|PNB)$/i)))) {
 		
-		
-            window.alert("Route 10 OR\nRoute 4 \n Fare: \n Student = 7 php \n Regular = 8 php");
+			//inc routes
+            window.open("r10-r4.html");
 		}
 		else if ((origin.match(/^(Agdao Public Market|Agdao Flyover)$/i) && desti.match(/^(Bankerohan Public Market|San Pedro Cathedral|San Pedro|Piapi Blvd|Mini Forest Blvd|Quezon Blvd|Trading Blvd|DCPO|Davao City Police Office)$/i) || (origin.match(/^(San Pedro Cathedral|San Pedro|Piapi Blvd|Mini Forest Blvd|Quezon Blvd|Trading Blvd|DCPO|Davao City Police Office)$/i) && desti.match(/^(Agdao Public Market|Agdao Flyover)$/i)))) {
 		
-		
-            window.alert("Route 5 or Route 6 \n Fare: \n Student: 7 PHP \n Regular = 8 PHP");
+			//inc routes
+            window.open("r5-r6.html");
 		}
 		else if ((origin.match(/^(Agdao Public Market|Quezon Blvd|Mini Forest Blvd|Piapi Blvd|Trading Blvd|DCPO)$/i) && desti.match(/^(F.Torress ST.|Brokenshire Hospital|Orchard Cemetery|Wireless Cemetery|Davao City National High School|Madapo|Quezon Blvd|Mini Forest Blvd|Piapi Blvd|Trading Blvd|DCPO)$/i) || (desti.match(/^(Quezon Blvd|Mini Forest Blvd|Piapi Blvd|Trading Blvd|DCPO|F.Torress ST.|Brokenshire Hospital|Orchard Cemetery|Wireless Cemetery|Davao City National High School|Madapo|Agdao Public Market)$/i) && origin.match(/^(Quezon Blvd|Mini Forest Blvd|Piapi Blvd|Trading Blvd|DCPO|F.Torress ST.|Brokenshire Hospital|Orchard Cemetery|Wireless Cemetery|Davao City National High School|Madapo)$/i)))) {
 			
-			
+			//inc routes
 			window.open("r11.html"); 	
 	
 		}
